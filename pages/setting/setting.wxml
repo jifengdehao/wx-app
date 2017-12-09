@@ -13,7 +13,7 @@
     </view>
   </view>
   <view class="category-item">
-    <block wx:for="{{cache}}">
+    <block wx:for="{{cache}}" wx:key="index">
       <view class="detail-item" catchtap="{{item.tap}}">
         <image src="{{item.iconurl}}"></image>
         <text>{{item.title}}</text>
@@ -22,7 +22,7 @@
     </block>
   </view>
   <view class="category-item">
-    <block wx:for="{{device}}">
+    <block wx:for="{{device}}" wx:key="index">
       <view class="detail-item" catchtap="{{item.tap}}">
         <image src="{{item.iconurl}}"></image>
         <text>{{item.title}}</text>
@@ -31,7 +31,7 @@
     </block>
   </view>
   <view class="category-item">
-    <block wx:for="{{api}}">
+    <block wx:for="{{api}}" wx:key="index">
       <view class="detail-item" catchtap="{{item.tap}}">
         <image src="{{item.iconurl}}"></image>
         <text>{{item.title}}</text>
@@ -40,7 +40,7 @@
     </block>
   </view>
   <view class="category-item">
-    <block wx:for="{{others}}">
+    <block wx:for="{{others}}" wx:key="index">
       <view class="detail-item" catchtap="{{item.tap}}">
         <image src="{{item.iconurl}}"></image>
         <text>{{item.title}}</text>

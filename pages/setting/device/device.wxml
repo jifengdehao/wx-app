@@ -1,6 +1,6 @@
 <view class="container">
     <view class="category-item">
-        <block wx:for="{{phoneInfo}}">
+        <block wx:for="{{phoneInfo}}" wx:key="index">
             <view class="detail-item">
                 <text>{{item.key}}</text>
                 <text>{{item.val}}</text>
@@ -8,7 +8,7 @@
         </block>
     </view>
     <view class="category-item">
-        <block wx:for="{{softInfo}}">
+        <block wx:for="{{softInfo}}" wx:key="index">
             <view class="detail-item">
                 <text>{{item.key}}</text>
                 <text>{{item.val}}</text>
@@ -16,7 +16,7 @@
         </block>
     </view>
     <view class="category-item">
-        <block wx:for="{{screenInfo}}">
+        <block wx:for="{{screenInfo}}" wx:key="index">
             <view class="detail-item">
                 <text>{{item.key}}</text>
                 <text>{{item.val}}</text>

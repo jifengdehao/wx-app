@@ -7,6 +7,7 @@ Page({
     isPlayingMusic: false
   },
   onLoad: function (options) {
+    console.log(options)
     var postId = options.id;
     
     this.postId = postId;
